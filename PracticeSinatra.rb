@@ -1,168 +1,91 @@
 require 'sinatra'
 
-get '/' do
-    "<html>
+get '/' do 
+    "<html><head><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'></head><body>
+<form class='form-horizontal' method='post' action='http://aelsakka-aelsakka.c9users.io/'>
+<fieldset>
 
-	<head>
-	<title> </title>
-	</head>
+<!-- Form Name -->
+<legend>Form Name</legend>
 
-	<body>
-		<h1>Welcome to my website</h1>
-		<h1>About me</h1>
-		<p> I have chosen IS because I believe that the knowlege and experience I will gain in CMUQ as an IS student, will help me 
-		solve real world problems. Im interested in the web development part and I believe studing IS in CMU, will increase my knowlledge
-		in this part and allow me to get exposed to different and other parts of IS. All the knowledge I will learn now, will allow 
-		me to work in the best places in the future. </p>
-		
-		<ol>
-		<h5>Hobbies:</h5>
-		<li>Swimming</li>
-		<li>Table Tennis</li>
-		<li>BasketBall</li>
-		</ol>
+<!-- Text input-->
+<div class='form-group'>
+  <label class='col-md-4 control-label' for='FirstName'>First Name</label>  
+  <div class='col-md-4'>
+  <input id='FirstName' name='FirstName' type='text' placeholder='FirstName' class='form-control input-md' required=''>
+    
+  </div>
+</div>
 
-		<ul>
-		<h5>Food:</h5>
-		<li>Pizza</li>
-		<li>Pasta</li>
-		<li>Seafood</li>
-		</ul>
+<!-- Text input-->
+<div class='form-group'>
+  <label class='col-md-4 control-label' for='LastName'>Last Name</label>  
+  <div class='col-md-4'>
+  <input id='LastName' name='LastName' type='text' placeholder='LastName' class='form-control input-md' required=''>
+    
+  </div>
+</div>
 
+<!-- Text input-->
+<div class='form-group'>
+  <label class='col-md-4 control-label' for='Email'>Email</label>  
+  <div class='col-md-4'>
+  <input id='Email' name='Email' type='text' placeholder='Email' class='form-control input-md' required=''>
+    
+  </div>
+</div>
 
-		<h5>My schedule:</h5>
-		<table>
-		  <tr>
-		  <th>Time</th>
-		    <th>Sunday</th>
-		    <th>Monday</th> 
-		    <th>Tuesday</th>
-		    <th>Wednesday</th>
-		    <th>Thursday</th> 
-		 
-		  </tr>
-		  
+<!-- Password input-->
+<div class='form-group'>
+  <label class='col-md-4 control-label' for='Password'>Password </label>
+  <div class='col-md-4'>
+    <input id='Password' name='Password' type='password' placeholder='Password' class='form-control input-md' required=''>
+    
+  </div>
+</div>
 
-		  <tr> 
-			<td>9.30-10.20 </td>
-		    <td>Ruby On Rails</td>
-		    <td></td> 
-		    <td>Ruby On Rails</td>
-		    <td></td> 
-		    <td>Ruby On Rails</td>
-		  </tr>
+<!-- Select Basic -->
+<div class='form-group'>
+  <label class='col-md-4 control-label' for='Gender'>Gender</label>
+  <div class='col-md-4'>
+    <select id='Gender' name='Gender' class='form-control'>
+      <option value='Male'>Male</option>
+      <option value='Female'>Female</option>
+    </select>
+  </div>
+</div>
 
-		    <tr>
-		    <td>10.30-11.20 </td>
-		    <td>Global History</td>
-		    <td>Milieux</td> 
-		    <td>Global History</td>
-		    <td>Milieux</td> 
-		    <td>Global History</td>
-		  </tr>
+<!-- Button -->
+<div class='form-group'>
+  <label class='col-md-4 control-label' for='Submit'>Submit</label>
+  <div class='col-md-4'>
+    <button id='Submit' name='Submit' class='btn btn-primary'>Button</button>
+  </div>
+</div>
 
+</fieldset>
+</form>
 
-		     <tr>
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		  </tr>
-
-
-		     <tr>
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		  </tr>
-
-
-		     <tr>
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		  </tr>
-
-
-		     <tr>
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		  </tr>
-
-
-		     <tr>
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		  </tr>
-
-		       <tr>
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		  </tr>
-
-
-		       <tr>
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		  </tr>
-
-
-		       <tr>
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		    <td></td> 
-		    <td></td>
-		  </tr>
-
-
-		     <tr>
-		     <td>1.30-3.00</td>
-		    <td></td> 
-		    <td>Statistics</td>
-		    <td></td> 
-		    <td>Statistics</td>
-		  </tr>
-   			
-
-   			<tr>
-   			 <td>3.00-4.20</td>
-		    <td>Writing</td>
-		    <td></td> 
-		    <td>Writing</td>
-		    <td></td> 
-		    <td></td>
-		  </tr>
-		</table>
-        <form  method='POST'>
-        <p><label>Enter your name</label> <input type='text' name='post[:name]' /></p>
-        <p><label>Enter your email</label> <input type='text' name='post[:email]' /></p>
-        <p><button type = 'submit' name='Submit'>submit</button></p>
-         
-        </form>
-
-	</body>
-
+</body>
 </html>"
+end
 
 
 
+
+
+
+
+
+
+
+
+post '/' do 
+    "<html><head></head><body> Hello #{params[:FirstName]} #{params[:LastName]} <br><br>
+    Your details: <br><br>
+    Email : #{params[:Email]} <br><br>
+    Password: #{params[:Password]}<br><br>
+    Gender:#{params[:Gender]}
+
+	</body></html>"
 end 
-

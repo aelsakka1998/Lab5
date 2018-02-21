@@ -1,0 +1,107 @@
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.main {
+    background-color : #BD9412 ; 
+    background-image: url("AlWakrahStadium.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; 
+    text-align: center;
+    opacity: 0.85;
+    
+
+}
+
+button {
+    background-color: #7E2E0D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:19px;
+    
+}
+button:hover {
+    opacity: 0.8;
+}
+.text {
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  transform: translate(-40%, -35%);
+  color: white;
+}
+/*.navbar-nav > li > a, .navbar-brand {*/
+/*    padding-top:19px !important; padding-bottom:0 !important;*/
+/*    height: 55px;*/
+/*}*/
+.navbar {min-height:55px !important;}
+li a {
+    font-size: 18px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="main">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">CMUQ</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="categories.php">Apply</a></li>
+        <li><a href="">About CMU</a></li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+
+    <div>
+        <form action="http://aelsakka-aelsakka.c9users.io:8080/main/login">
+        <button type="submit" style="font-size: 19px; margin-top: 25%;">Login </button>
+        </form>
+        
+        <br>
+        
+        <form action="http://aelsakka-aelsakka.c9users.io:8080/main/signup">
+        <button type="submit" style="font-size: 19px;">Signup</button>
+        </form>
+    </div>
+    
+</div>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<h2>
+Hello, world!
+</h2>
+	<p>
+		This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+	</p>
+	<ul>
+	    <% @all_food.each do |id , food| %>
+	    <li>
+	    	<a href="/food/<%= id %>"><%=food %></a> |
+	    	<a href="/food/<%= id %>/edit">Edit</a> |
+	    	<a href="/food/<%= id %>/delete">Delete</a>
+	    <% end %>
+	  
+	       
+
+	</ul>

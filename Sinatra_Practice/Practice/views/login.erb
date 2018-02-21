@@ -1,0 +1,90 @@
+<html>
+
+<head>
+
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.main {
+    background-color : #B99898 ;
+    background-image: url("AlWakrahStadium.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; 
+    text-align: center;
+
+}
+
+form {
+    border: 2px solid #BC440F;
+    width: 40%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18%;
+    margin-bottom:auto;
+
+    text-align: left;
+    background-color: #79081D;
+    padding:15px;
+   
+}
+button {
+    background-color: #EF885B;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+input[type=text], input[type=password],input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.container {
+    font-size:18px;
+    padding: 16px;
+    background-color:#79081D;
+    
+}
+
+</style>
+</head>
+<body>
+
+    <div class="main">
+
+        <form method="post" action ="http://aelsakka-aelsakka.c9users.io:8080/main/submitLogin">
+            <h1>Login</h1>
+            
+            <div class="container"> 
+
+                <label>Email:</label>
+                <input type="text" placeholder="Enter Email" name="email">
+                <label>Password:</label>
+                <input type="password" placeholder="Enter Password" name="Password">
+                <button type = "submit" name="Submit" style="font-size: 18px;">Login</button>
+                
+            </div>
+        
+        
+
+    </div>
+    
+
+</form>
+</body>
+</html>

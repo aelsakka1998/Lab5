@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  chicken_id: 1
+  size: 1
+  color: MyString
+
+two:
+  chicken_id: 1
+  size: 1
+  color: MyString

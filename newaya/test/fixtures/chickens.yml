@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  farm_id: MyString
+  name: MyString
+  breed: MyString
+
+two:
+  farm_id: MyString
+  name: MyString
+  breed: MyString

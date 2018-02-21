@@ -1,0 +1,43 @@
+		<h1>Welcome to my website</h1>
+		<h1>About me</h1>
+		<p> I chose IS because I believe that the knowlege and experience I will gain in CMUQ as an IS student, will help me 
+		solve real world problems. Im interested in the web development part and I believe studing IS in CMU, will increase my knowlledge
+		in this part and allow me to get exposed to different and other parts of IS. All the knowledge I will learn now, will allow 
+		me to work in the best places in the future. </p>
+			<p>
+			   <ul>
+			       <% @requirments.each_index do |id| %>
+			       <li>
+			           <%=@requirments[id] %>
+			       </li>
+			       
+			       <% end %>
+			       
+			   </ul>
+			</p>
+			<h3> For further questions submit your details </h3>
+			<form action="/Login.erb" method="post">
+			<label for="exampleInputEmail1">
+								Email address
+							</label>
+							<input type="email" class="form-control" id="exampleInputEmail1"  name="email">
+						</div>
+						<div class="form-group">
+							 
+							<label for="exampleInputPassword1">
+								Password
+							</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" name="password" />
+						</div>
+						<div class="form-group">
+							 
+							<label for="exampleInputFile">
+								File input
+							</label>
+							<input type="file" id="exampleInputFile" />
+						</div>
+	
+						<button type="submit" class="btn btn-default">
+							Submit
+						</button>
+					</form>

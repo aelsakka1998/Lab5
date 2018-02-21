@@ -1,0 +1,21 @@
+<h2> delete food page</h2>
+
+<form class="form-horizontal" action="http://aelsakka-aelsakka.c9users.io:8080/main/<%= @id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    
+    <fieldset>
+        <legend> Delete food </legend>
+        The food you selected is: <br/>
+        
+        <ul>
+            <li><% @food_item.each do |id,food|%> <%= id%>) <%= food%> <%end%> </li>
+        </ul>
+    <div class="form-group">
+  <label class="col-md-4 control-label" for="delete_button"></label>
+  <div class="col-md-4">
+    <button id="delete_button" name="delete_button" class="btn btn-danger">Delete</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
